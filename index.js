@@ -3,7 +3,7 @@ const http = require('http').createServer(app)
 
 
 app.get('/', (req, res) => {
-    res.send("Node Server is running")
+    res.send("Node Server is running....")
 })
 
 //Socket Logic
@@ -15,4 +15,4 @@ socketio.on("connection", (userSocket) => {
     })
 })
 
-http.listen(process.env.PORT)
+http.listen(8080)
